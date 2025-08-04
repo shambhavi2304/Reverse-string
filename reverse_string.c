@@ -6,8 +6,6 @@ int main() {
 
     printf("Enter a string: ");
     fgets(str, sizeof(str), stdin);
-
-    // Remove trailing newline if present
     str[strcspn(str, "\n")] = 0;
 
     int len = strlen(str);
@@ -19,3 +17,4 @@ int main() {
     printf("\n");
     return 0;
 }
+
